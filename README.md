@@ -1,5 +1,7 @@
 # Midas
 
+Comparador de preços de produtos de supermercados.
+
 ## O projeto midas é composto por 3 repositórios:
 
 Todos os repositórios estão públicos e contém informações de como executar-los.
