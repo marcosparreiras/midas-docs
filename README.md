@@ -10,6 +10,8 @@ Todos os repositórios estão públicos e contém informações de como executar
 - [Scrapper Data](https://github.com/marcosparreiras/lambda-scrapper-puc)
 - [Save Data](https://github.com/marcosparreiras/lambda-save-data-puc)
 
+![quadro branco do projeto](./images/white-board.png)
+
 ## Deploy
 
 Foram feitos o deploy de todas as aplicações.
