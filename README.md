@@ -2,13 +2,14 @@
 
 Comparador de preços de produtos de supermercados.
 
-## O projeto midas é composto por 3 repositórios:
+## O projeto midas é composto por 4 repositórios:
 
 Todos os repositórios estão públicos e contém informações de como executar-los.
 
 - [SNS Publisher](https://github.com/marcosparreiras/sns-publisher-puc)
 - [Scrapper Data](https://github.com/marcosparreiras/lambda-scrapper-puc)
 - [Save Data](https://github.com/marcosparreiras/lambda-save-data-puc)
+- [Search Products](https://github.com/marcosparreiras/lambda-search-products)
 
 ![quadro branco do projeto](./images/white-board.png)
 
@@ -41,6 +42,18 @@ Filas SQS
 Lamdba Function
 
 ![funcoes lambdas](./images/lambda-functions.png)
+
+O `Search Products` também está hospedado na AWS e também conta com um arquivo declarativo do Cloud Formation para provisionar sua infraestrutura (API Gateway e Lambda Function).
+
+API Gateway
+
+![funcoes lambdas](./images/api-gateway.png)
+
+teste a aplicação
+
+```bash
+curl -X POST -H "Content-Type: application/json" -d '{"productName": "papelao", "userLatitude": -19.94371450344724, "userLongitude": -43.935641886994574, "maxDistance": 10}' https://3q8p2xen33.execute-api.us-east-1.amazonaws.com/Prod/products
+```
 
 ## Esquema do Banco de Dados
 
